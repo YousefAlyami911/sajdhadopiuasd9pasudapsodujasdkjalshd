@@ -341,6 +341,8 @@ client.on('message', message => {
       message.channel.send(helpEmbed);
     }
 });
+client.user.setGame("Listen To Music :)", "https://www.twitch.tv/idk");
+
 
 client.login(process.env.BOT_TOKEN);
 
