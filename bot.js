@@ -20,7 +20,9 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "!";
+client.user.setGame("Listen To Music :)", "https://www.twitch.tv/idk");
+
+const prefix = "y";
 /////////////////////////
 ////////////////////////
 
@@ -341,7 +343,6 @@ client.on('message', message => {
       message.channel.send(helpEmbed);
     }
 });
-client.user.setGame("Listen To Music :)", "https://www.twitch.tv/idk");
 
 
 client.login(process.env.BOT_TOKEN);
